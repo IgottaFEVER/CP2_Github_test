@@ -12,18 +12,23 @@ public class CP2_Git_Calc {
 
 class Calc {
 	public int add(double a, double b) {
-		return -1;
+		return (int) (a + b);
 	}
-	
+
 	public int sub(double a, double b) {
-		return -1;
+		return (int) (a - b);
 	}
-	
+
 	public int mul(double a, double b) {
-		return -1;
+		return (int) (a * b);
 	}
-	
+
 	public int div(double a, double b) {
-		return -1;
+		if (b != 0) {
+			return (int) (a / b);
+		}else {
+			return 0;
+		}
+
 	}
 }
